@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff; 
+    height: 70px;
+  }
+
+  .appIcon {
+    margin-left: 2rem;
+    width: 80px;
+    cursor: pointer;
+    @media (max-width: 699px) {
+      display: none;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center; 
+    gap:40px; 
+  }
+  .navElements{
+    cursor: pointer;
+  }
+
+  .contactBtn {
+    background-color: #1090CB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  @media (max-width: 768px) {
+    .nav ul {
+      display: none; 
+    }
+  }
+  .activeColor{
+    cursor: pointer;
+    color:#1090CB !important;
+  }
+  

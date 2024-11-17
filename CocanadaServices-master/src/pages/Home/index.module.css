@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  padding: 1rem 20px;
+  /* height: 90vh; */
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f4fb;
+}
+.mainContent {
+  display: flex;
+  padding: 0rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.textSection {
+  width:50%;
+  /* max-width: 50%; */
+  /* margin-left:123px; */
+  /* margin-top: 160px; */
+}
+.textContent, .highlight{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+}
+.highlight {
+  color:  #1090CB;
+}
+.textSection p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primaryButton {
+  width:193px;
+  background-color:  #1090CB;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  width:193px;
+  background-color: white;
+  color: #1090CB;
+  padding: 15px 30px;
+  border: 2px solid  #1090CB;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.imageSection{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .textSection h1 {
+    font-size: 2em;
+    width:90%
+  }
+  .mainContent {
+    flex-direction: column;
+  }
+  .textSection {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .textDescription{
+    width:80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .textSection  {
+    font-size: 1.8em;
+    margin-left: 60px;
+    width:90%;
+  }
+  .textContent, .highlight{
+    font-size: 30px;
+    line-height: 40px;
+
+  }
+  .primaryButton,
+  .secondaryButton {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textSection h1 {
+    font-size: 1.5em;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .mainContent {
+    padding: 0;
+  }
+}
+.textDescription{
+  padding-top: 20px;
+  padding-bottom: 65px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}

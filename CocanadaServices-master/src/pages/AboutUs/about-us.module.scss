@@ -1,0 +1,34 @@
+.team-container {
+//   overflow: hidden;
+  position: relative;
+  margin: 1rem 4rem;
+  h1{
+    color: #1090CB;
+  }
+}
+
+.team-members {
+  display: flex;
+  width: fit-content;
+  animation: scrolling 40s linear infinite; 
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 200px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-image {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 15px;
+  margin-bottom: 10px;
+}

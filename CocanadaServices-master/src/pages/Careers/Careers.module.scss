@@ -1,0 +1,76 @@
+.careersFormContainer {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+}
+
+.careersForm {
+    display: flex;
+    flex-direction: column;
+    .formGroup {
+        margin-bottom: 15px;
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+       input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #1090CB;
+                outline: none;
+            }
+        }
+    }
+
+    .submitButton {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #1090CB;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #007bb5;
+        }
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .careersFormContainer {
+        padding: 10px;
+    }
+
+    .careersForm .formGroup {
+        input, select {
+            padding: 8px;
+        }
+    }
+
+    .submitButton {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+.parent{
+    background-color: #E8F4FA;
+}
